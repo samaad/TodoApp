@@ -29,14 +29,12 @@ angular.module('todoapp').factory('TaskService',
             function httpGet(url){
                 return httpExecute(url, 'GET');
             }
-
-           
             
             function loadAllTask() {
             		return httpGet(urls.GET_ALL); 
                                
             }
-
+            
             function getTask(id) {
                 return httpGet(urls.GET_BY_ID + id);
             }
